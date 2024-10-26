@@ -30,3 +30,14 @@ codekit-config.json
 .sass-cache
 _asset_bundler_cache
 _site
+
+docs
+minimal-mistakes-jekyll.gemspec
+screenshot-layouts.png
+screenshot.png
+README.md
+CHANGELOG.md
+test
+.github
+.gitattributes
+.editorconfig
