@@ -27,7 +27,7 @@ baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "saptarshidatta97/portfolio-blog"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "assets/images/favicon.ico"
-masthead_title           : " "
+masthead_title           : "Saptarshi Datta"
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
 enable_copy_code_button  : # true, false (default)
@@ -117,11 +117,11 @@ author:
   avatar           : "assets/images/bio-photo.jpg"
   bio              : "Senior Product Engineer at TCS"
   location         : "Kolkata, India"
-  email            : "datta.3@iitj.ac.in"
+  email            : 
   links:
     - label: "datta.3@iitj.ac.in"
       icon: "fas fa-fw fa-envelope-square"
-    #   url: "mailto:datta.3@iitj.ac.in"
+      url: "mailto:datta.3@iitj.ac.in"
     - label: "Website"
       icon: "fas fa-fw fa-link"
     #   url: "https://saptarshidatta.in"
