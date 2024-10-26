@@ -4,8 +4,8 @@ main:
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "About"
     url: https://www.linkedin.com/in/saptarshi-datta/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
+  - title: "Portfolio"
+    url: /404/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
