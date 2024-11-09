@@ -1,11 +1,11 @@
 ---
-title: "Event Driven System Design with Azure Functions"
+title: Event Driven System Design with Azure Functions
 ---
 
-Events are the basic building block of asyncronous processing. Now, when I say about asynchronopus processing, we first need to understand the difference between syncronous and asynchronous processing. 
+Events serve as the fundamental building blocks for asynchronous processing. To understand asynchronous processing, it’s essential to first differentiate between synchronous and asynchronous approaches.
 
-Syncronous processing is usually the way applications communicate with each other over APIs where the client awaits the server to respons within the timeout limit.
-Asynchronous processing is the way where the communication between the client and server happens over a message broker. The client usually writes a message/ request on a queue, and the server listens to the queue and processes each request once at a time using FIFO principle. 
+In synchronous processing, applications often communicate via APIs, where the client sends a request and waits for the server to respond within a specified timeout period. This form of processing is commonly used for real-time, immediate-response interactions.
 
-Queues are a part of the design pattern "Queue based Load Levelling". Queues are often used as a buffer between a task and a service it invokes to smoothen out the intermittent heavy load that can cause the task to timeout and the service to fail. They help to minimize the impact of peaks in demand on availability and responsiveness for both the task and the service.
+In contrast, asynchronous processing enables communication between the client and server through a message broker. Here, the client places a request or message into a queue, and the server listens to the queue and processes each request sequentially, following the First-In, First-Out (FIFO) principle.
 
+Queues are a key component of the "Queue-based Load Leveling" design pattern. They act as a buffer between a task and the service it invokes, helping to manage sudden surges in demand. By smoothing out spikes in workload, queues reduce the likelihood of task timeouts and service failures, thereby enhancing the availability and responsiveness of both the task and the service.
