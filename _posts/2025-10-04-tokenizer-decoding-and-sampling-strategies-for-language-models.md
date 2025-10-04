@@ -3,7 +3,7 @@ title: Tokenizer Decoding and Sampling Strategies for Language Models
 ---
 
 
-Sample Python file
+tokenization is the process in the NLP pipeline where 
 
 ```Python3
 output_ids = model.generate(input_ids, max_new_tokens=20)
