@@ -36,27 +36,8 @@ Interestingly, human language is less predictable than model-generated text. To 
 
 Sampling strategies control how tokens (words or subwords) are selected during text generation. Different strategies trade off between creativity, diversity, and coherence. Here's an overview of the main types of sampling strategies used in LLMs:
 
-🔹 1. Greedy Sampling
 
-What it does: Selects the highest probability token at each step.
-
-Pros: Fast and deterministic.
-
-Cons: Can result in repetitive or dull output; may get stuck in loops.
-
-Use case: When you want deterministic, straightforward answers.
-
-🔹 2. Beam Search
-
-What it does: Keeps the top k sequences at each step (beam width), expanding each and selecting the best candidates.
-
-Pros: More coherent and optimized than greedy.
-
-Cons: Still deterministic, can be computationally expensive, often lacks diversity.
-
-Use case: Translation, summarization where output quality and structure matter.
-
-🔹 3. Top-k Sampling (k-sampling)
+🔹 Top-k Sampling (k-sampling)
 
 What it does: From the top k most probable tokens, samples one randomly.
 
@@ -68,7 +49,7 @@ Hyperparameter: k (typical values: 10–100).
 
 Use case: Creative writing, chatbots.
 
-🔹 4. Top-p Sampling (Nucleus Sampling)
+🔹 Top-p Sampling (Nucleus Sampling)
 
 What it does: Chooses from the smallest set of tokens whose cumulative probability exceeds p.
 
@@ -80,7 +61,7 @@ Hyperparameter: p (typical values: 0.8–0.95).
 
 Use case: Dialogue, story generation, open-ended text.
 
-🔹 5. Temperature Sampling
+🔹 Temperature Sampling
 
 What it does: Controls randomness in sampling by scaling the logits before softmax.
 
@@ -92,7 +73,7 @@ Usually used with: Top-k or top-p sampling.
 
 Use case: Fine-tuning creativity levels in generation.
 
-🔹 6. Typical Sampling
+🔹 Typical Sampling
 
 What it does: Samples tokens that have typical (i.e., average) information content, avoiding overly common or rare tokens.
 
@@ -100,7 +81,7 @@ Pros: Avoids degenerate repetition while keeping coherence.
 
 Use case: Balanced generation; newer and increasingly popular.
 
-🔹 7. Contrastive Search (Decoding)
+🔹 Contrastive Search (Decoding)
 
 What it does: Combines greedy search with diversity-promoting objectives using contrastive scoring.
 
@@ -110,7 +91,7 @@ Cons: More complex and computationally expensive.
 
 Use case: Applications needing coherent long outputs (e.g., essays, articles).
 
-🔹 8. Random Sampling (Unconstrained)
+🔹 Random Sampling (Unconstrained)
 
 What it does: Samples from the full probability distribution.
 
