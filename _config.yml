@@ -23,7 +23,7 @@ subtitle                 : # site tagline that appears below site title in masth
 name                     : "Saptarshi Datta"
 description              : "Software Engineering Blog."
 url                      : "https://saptarshidatta.in/"
-baseurl                  : "/blog"
+baseurl                  : #"/blog"
 repository               : "saptarshidatta97/portfolio-blog"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "assets/images/favicon.ico"
