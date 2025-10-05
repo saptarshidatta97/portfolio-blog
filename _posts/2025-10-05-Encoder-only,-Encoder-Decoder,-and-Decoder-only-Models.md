@@ -6,6 +6,7 @@ In natural language processing (NLP), transformer-based models have revolutioniz
 Encoder-only models are designed to understand input text by converting it into rich, contextual representations. These models look at the entire input sequence simultaneously and learn the relationships between all tokens. They're ideal for tasks like classification, named entity recognition, and semantic similarity. A well-known example is BERT, which reads the text in both directions to capture deep contextual meaning.
 
 ✅ Purpose: Understanding and encoding input text.
+
 📘 Examples:
 
 - BERT (Bidirectional Encoder Representations from Transformers)
@@ -30,6 +31,7 @@ BERT is trained on large corpora like Wikipedia and BookCorpus, using a bidirect
 Encoder-decoder models handle sequence-to-sequence tasks, where an input sequence needs to be transformed into a different output sequence — such as translating one language into another or summarizing a document. The encoder processes the input and compresses it into a context vector, while the decoder generates the output based on that vector and previous outputs. Models like T5 and BART follow this architecture.
 
 ✅ Purpose: Input → Output transformation (translation, summarization, etc.)
+
 📘 Examples:
 
 - T5 (Text-to-Text Transfer Transformer)
@@ -61,6 +63,7 @@ These models are trained on massive datasets like Common Crawl, C4, and multilin
 Decoder-only models are built for generating text based on a prompt. They take in a partial sequence and predict the next token one step at a time, using previous tokens as context. These models are trained with causal masking to ensure they don't "peek" at future words. The GPT family (like GPT-3 and GPT-4) are prime examples, widely used for tasks like storytelling, code generation, and conversational AI.
 
 ✅ Purpose: Generate text based on a prompt.
+
 📘 Examples:
 
 - GPT-2, GPT-3, GPT-4 (Generative Pretrained Transformer)
