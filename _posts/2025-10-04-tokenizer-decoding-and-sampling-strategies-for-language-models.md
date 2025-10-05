@@ -21,7 +21,9 @@ Text generation can be done using different strategies. One simple method is gre
 A better approach is beam search, which explores multiple candidate sequences and keeps the most likely ones. This results in more coherent outputs but is slower and can still be repetitive.
 
 To reduce repetition, we can use settings like:
+
 -repetition_penalty: discourages repeated words.
+
 -bad_words_ids: blocks unwanted words.
 
 Beam search works well for tasks with predictable output length (e.g., translation or summarization), but not as well for open-ended generation.
